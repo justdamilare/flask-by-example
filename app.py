@@ -73,7 +73,7 @@ def index():
         if 'http://' not in url[:7]:
             url = 'http://' + url
         job = q.enqueue_call(
-            func=count_and_save_words, args=(url,), result_ttl=50000
+            func=count_and_save_words, args=(url,), result_ttl=5000
         )
         print(job.get_id())
 
