@@ -9,7 +9,7 @@
   
       $scope.getResults = function() {
   
-        $log.log("test");
+        // $log.log("test");
   
         // get the URL from the input
         var userInput = $scope.url;
